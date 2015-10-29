@@ -1,0 +1,3 @@
+# Kyocera Scan System F Receiver Daemon Options
+
+SCAN_RECEIVE_DIRECTORY=/var/spool/kyoscand

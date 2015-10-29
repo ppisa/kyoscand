@@ -1,0 +1,31 @@
+Information guessed till now is
+
+  Network byte order for binary numbers (big-endian)
+
+  Block structure for both directions
+     uint16_t length, uint8_t code, uint8_t subcode
+  server returned subcode = received subcode | 0x10
+
+  Initial "OK" message breaking these rules
+
+  Reply to 0x34.0x00 contains probably list of supported
+  formats on receiving side. Could be interresting to get
+  full list. May it be it can even override preference
+  on scanner side?
+  "TIFF-G4MMR" "PDF-G4MMR" "TIFF-G3MH"
+
+  0x34.0x02 is probably some authentization
+
+  0x30.0x01 is header of file send (scan) with file name
+
+  raw data block are strange, because there is no code
+  and it is questionable, how to find data end. My code
+  uses heuristic, that when not full block length is received
+  then it is last block.
+
+  the transfer is finalized by some confirmation sequence
+  0x30.0x02
+  0x30.0x05
+  0x30.0x15
+  0x30.0x03
+  0x30.0x13,

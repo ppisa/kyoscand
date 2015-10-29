@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ -n "$HOME" ] ; then
+  SCANDIR="$HOME/kyoscan"
+else
+  SCANDIR="/tmp/kyoscan"
+fi
+
+mkdir -p "$SCANDIR" || exit 1
+
+/usr/bin/kyoscand -d "$SCANDIR"

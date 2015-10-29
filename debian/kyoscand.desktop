@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Scan zu PC
+Name[de]=Scan zu PC
+Comment=Linux daemon for Kyocera Scan to PC
+Comment[de]=Kyocera Scan to PC
+Icon=/usr/share/icons/gnome/48x48/devices/scanner.png
+Exec=/usr/bin/kyoscan
+Terminal=true
+Categories=X-Debian-Applications-Graphics;

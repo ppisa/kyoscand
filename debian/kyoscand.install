@@ -1,0 +1,5 @@
+usr/bin/kyoscan
+usr/bin/kyoscand
+usr/share/doc/kyoscand/*
+usr/share/man/*
+var/spool/kyoscand

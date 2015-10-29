@@ -1,0 +1,15 @@
+[Unit]
+Description=Kyocera Scan System F Receiver Daemon
+Documentation=man:kyoscand(1)
+After=syslog.target
+
+[Service]
+Type=simple
+NotifyAccess=main
+Restart=always
+StandardOutput=syslog
+EnvironmentFile=-/etc/default/kyoscand
+ExecStart=/usr/bin/kyoscand -S -u 0022 -d $SCAN_RECEIVE_DIRECTORY
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,4 @@
+?package(kyoscand):needs="X11" section="Applications/Graphics"\
+  longtitle="Kyocera Scan System F Receiver Daemon Start"\
+  icon="/usr/share/icons/gnome/48x48/devices/scanner.png"\
+  title="KyoScanD Start" command="/usr/bin/kyoscan"

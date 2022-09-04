@@ -4,7 +4,6 @@ Priority: extra
 Maintainer: Pavel Pisa <pisa@cmp.felk.cvut.cz>
 Build-Depends:
  debhelper (>= 7),
- dh-systemd (>= 1.5),
  cdbs,
 Standards-Version: 3.8.3
 Homepage: http://cmp.felk.cvut.cz/~pisa/#linuxgoodies

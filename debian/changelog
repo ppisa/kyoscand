@@ -1,3 +1,9 @@
+kyoscand (0.0.5-2) experimental; urgency=low
+
+  * remove build dependency on dh-systemd which is no longer separate package
+
+ -- Pavel Pisa <pisa@cmp.felk.cvut.cz>  Sun, 04 Oct 2022 12:14:00 +0100
+
 kyoscand (0.0.5-1) experimental; urgency=low
 
   * update init script to run daemon at computer startup
